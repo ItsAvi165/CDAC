@@ -1,0 +1,14 @@
+
+6. In  code(line no 1--6) , how many classes are loaded ?
+how many objs ? 
+
+psvm(....) { 
+1. Scanner sc;   1
+2. Emp e;        2
+3. Box b;        3
+4. Date d;       4
+5. String s;     5
+6. int[] data;   ref of type array
+}
+
+Total 5 classes will be loaded.

@@ -1,0 +1,13 @@
+1. Conside below class.
+class Emp
+{
+  private int id;
+  private String name;
+  private static int noOfEmps;
+}
+Suppose you create , 10 emps objects, 
+
+How many copies of
+id : 10
+name : 10
+noOfEmps : 1

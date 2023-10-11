@@ -1,0 +1,38 @@
+#1. Using vi editor:
+#a) Create a file “Data1.txt
+#1. To Create file Data1.txt
+
+vi Data1.txt
+
+#b) Save the file and exit from the vi editor.
+#To save file in vi 
+
+:w
+
+#To exit file in vi
+
+:q
+
+#c) Open the vi editor without specifying a file name
+#To open file without specifiying the name
+
+vi
+
+#d) Write some text and and save it to a file “MyData2.txt”
+#To save with a file name in vi
+
+:w MyData2.txt
+
+#e) Repeat point ( c ) but after writing some text don’t save and just exit “vi”
+
+# to open vi
+
+vi
+
+#to exit
+
+:q 
+
+
+
+
