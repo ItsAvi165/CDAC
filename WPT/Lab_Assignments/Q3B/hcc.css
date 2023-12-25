@@ -1,0 +1,88 @@
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  color: cyan;
+  text-shadow: 10px;
+}
+#nav1 div {
+  width: 150px;
+  height: 45px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px black;
+  margin-inline-start: 3%;
+  /* font-weight: bolder; */
+}
+/* #ndiv1,
+#ndiv2,
+#ndiv3,
+#ndiv4,
+#ndiv5,
+#ndiv6,
+#ndiv7,
+#ndiv8,
+#ndiv9 {
+  width: 150px;
+  height: 45px;
+  font-size: 20px;
+  text-align: center;
+  color: gray;
+  text-shadow: 1px 1px black;
+  margin-inline-start: 3%;
+  font-weight: bolder;
+} */
+#nav1 {
+  background-color: cyan;
+  display: flex;
+  flex-direction: row;
+}
+#parent table,
+#parent tr,
+#parent th,
+#parent td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+#div2 table,
+#div2 tr {
+  border: 1px solid purple;
+  border-radius: 20px 20px;
+}
+#div2 {
+  border-radius: 20px 20px;
+  box-shadow: 10px 10px violet;
+  margin-inline-start: 60%;
+}
+div > table {
+  width: 100%;
+}
+#row1,
+#row2 {
+  background-color: cyan;
+}
+.col1 {
+  background-color: cornsilk;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  /* float: right; */
+}
+footer {
+  font-size: 20px;
+  position: fixed;
+  vertical-align: bottom;
+  background-color: grey;
+  color: white;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin-top: 300px;
+
+  /* text-shadow: 2px 2px black; */
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body>
+    <h1 id="head1">Sports Kits and Wear Pvt. Ltd.</h1>
+    <!-- <h5 id="head5">Feedback Form</h5> -->
+    <form>
+      <div id="div1">
+        <table align="center">
+          <tr>
+            <td><label for="uname">User Name :</label></td>
+            <td>
+              <input
+                type="text"
+                pattern="^[a-z][A-Z]$"
+                maxlength="10"
+                placeholder="Kishori Kumar"
+                required
+                autofocus
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="uemail">Email :</label></td>
+            <td>
+              <input type="email" placeholder="user-name@gmail.com" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="location">Location :</label></td>
+            <td>
+              <input type="text" placeholder="Mumbai" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td>
+              <input type="text" maxlength="10" placeholder="9123456789" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="desc">Descriptions:</label></td>
+            <td>
+              <textarea
+                placeholder="Descriptions of the problem"
+                cols="22"
+                rows="5"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="update">Send updates:</label></td>
+            <td>
+              <input type="radio" id="update-yes" name="update" /><label
+                for="update-yes"
+                >yes</label
+              >
+              <input type="radio" id="update-no" name="update" /><label
+                for="update-no"
+                >no</label
+              >
+            </td>
+          </tr>
+          <tr align="center">
+            <td><button type="submit" id="submitForm">Submit</button></td>
+            <td><button type="reset" id="clear">Clear</button></td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>

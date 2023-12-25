@@ -1,0 +1,116 @@
+#div1 {
+  width: 200px;
+  height: 200px;
+  background-color:tan;
+  border-radius: 10%;
+  border-style: solid;
+  border-color: black;
+  margin: 10px;
+  padding: 15px;
+  float: left;
+  position: relative;         
+}
+#cdiv1 {
+    width: 100px;
+    height: 100px;
+    background-color:tan;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: black;
+    margin: 10px;
+    padding: 15px;
+    float: left;   
+    position: absolute;      
+  }
+
+  #gdiv1 {
+    width: 50px;
+    height: 50px;
+    background-color:tan;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: black;
+    margin: 10px;
+    padding: 15px;
+    float: left;         
+  }
+  #div2 {
+    width: 200px;
+    height: 200px;
+    background-color:tan;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: black;
+    margin: 10px;
+    padding: 15px;
+    float: left; 
+    position: relative;        
+  }
+  #cdiv2 {
+    width: 100px;
+    height: 100px;
+    background-color:tan;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: black;
+    margin: 10px;
+    padding: 15px;
+    float: left;       
+    position: absolute;  
+  }
+  #div3 {
+    width: 200px;
+    height: 200px;
+    background-color:tan;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: black;
+    margin: 10px;
+    float: left;      
+    position: relative;   
+  }
+  #cdiv3 {
+    width: 100px;
+    height: 100px;
+    background-color:tan;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: black;
+    margin: 10px;
+    float: left;         
+    position: absolute;
+    right: 100px;
+}
+
+ @keyframes myanimation {
+    from{
+        width: 0px;
+        height: 0px;
+        background-color: orange;
+        /* transform: translate(40px); */
+    }
+    to{
+        width: 95px;
+        height: 40px;
+        background-color: red;
+        transform: rotate(360deg);
+        /* transform: scale(2,2);
+        transform: translate(20px,20px);
+        transform: skew(2); */
+    }
+}
+     
+#anim{
+    margin: auto;
+   -webkit-box-align: center;
+   -moz-box-align: center;
+    animation: myanimation;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+} 
+/* div:hover{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(360deg);
+} */

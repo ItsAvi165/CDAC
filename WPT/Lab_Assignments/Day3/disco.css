@@ -1,0 +1,73 @@
+#d1{
+    border: 50px;
+    border-color: black;
+    background-color: aqua;
+    width: 10px;
+    height: 50px;
+    margin: 10px;
+    animation: ad1;
+    animation-duration: 5s;
+    /* animation-iteration-count: 10; */
+
+}
+#d2{
+    border: 20px;
+    border-color: black;
+    background-color: aqua;
+    width: 10px;
+    height: 50px;
+    margin: 10px;
+    animation: ad2;
+    animation-duration: 5s;
+    /* animation-iteration-count: 10; */
+}
+#d3{
+    border: 20px;
+    border-color: black;
+    background-color: aqua;
+    width: 10px;
+    height: 50px;
+    margin: 10px;
+    animation: ad3;
+    animation-duration: 5s;
+    /* animation-iteration-count: 10; */
+}
+@keyframes ad1 {
+    from{
+        width: 0px;
+        height: 100px;
+        background-color: white;
+    }
+    to{
+        width: 500px;
+        height: 100px;
+        background-color: orange;
+    }
+}
+@keyframes ad2 {
+    from{
+        width: 0px;
+        height: 100px;
+        background-color: orange;
+    }
+    to{
+        width: 500px;
+        height: 100px;
+        background-color: white;
+    }
+}
+@keyframes ad3 {
+    from{
+        width: 0px;
+        height: 100px;
+        background-color: white;
+    }
+    to{
+        width: 500px;
+        height: 100px;
+        background-color: green;
+    }
+}  
+body{
+    background-color: black;   
+}
