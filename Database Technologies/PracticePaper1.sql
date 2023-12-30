@@ -36,17 +36,20 @@ VALUES
 -- Question 1. DISPLAY STUDENT NO. AND TOTAL MARKS OF EACH STUDENT HAVING TOTAL MARKS GREATER 
 -- THAN 160.
 
- select students.Student_No, SUM(Mark) as TOTAL_MARKS 
- from students inner join marks 
- on students.Student_No=marks.Student_No 
- group by students.Student_No having SUM(marks.Mark)>160;
+     SELECT students.Student_No, SUM(Mark) AS TOTAL_MARKS 
+     FROM students INNER JOIN marks 
+     ON students.Student_No=marks.Student_No 
+     GROUP BY students.Student_No HAVING SUM(marks.Mark)>160;
 
 -- Question 2. DISPLAY STUDENT NAME (FORENAME + SURNAME), MODULE NAME, AND MARK OF STUDENTS 
--- HAVING MARK GREATER THAN THE MARK OF EMILE ZOLA IN THE DATABASES MODULE USING 
+-- HAVING MARK GREATER THAN THE MARK OF John Doe IN THE Science MODULE USING 
 -- JOINS. 
 
-Select CONCAT(Forename," ",Surname), Module_Name, Mark as Marks 
-from students inner join marks 
-on students.Student_No=marks.Student_No 
-group by students.Student_No having SUM(Mark)>
-(select SUM(Mark) from marks where Student_No = 3);
+    SELECT CONCAT(s.Forename, ' ', s.Surname) AS Student_Name, m.Module_Name, m.Mark 
+    FROM Students s 
+    INNER JOIN Marks m ON s.Student_No = m.Student_No 
+    WHERE m.Module_Name = 'Science' 
+    AND m.Mark > (SELECT Mark FROM Marks m1 
+    INNER JOIN Students s1 ON m1.Student_No = s1.Student_No 
+    WHERE CONCAT(s1.Forename, ' ', s1.Surname) = 'John Doe' 
+    AND m1.Module_Name = 'Science');
