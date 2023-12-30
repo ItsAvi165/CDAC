@@ -40,3 +40,13 @@ VALUES
  from students inner join marks 
  on students.Student_No=marks.Student_No 
  group by students.Student_No having SUM(marks.Mark)>160;
+
+-- Question 2. DISPLAY STUDENT NAME (FORENAME + SURNAME), MODULE NAME, AND MARK OF STUDENTS 
+-- HAVING MARK GREATER THAN THE MARK OF EMILE ZOLA IN THE DATABASES MODULE USING 
+-- JOINS. 
+
+Select CONCAT(Forename," ",Surname), Module_Name, Mark as Marks 
+from students inner join marks 
+on students.Student_No=marks.Student_No 
+group by students.Student_No having SUM(Mark)>
+(select SUM(Mark) from marks where Student_No = 3);
