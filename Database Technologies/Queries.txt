@@ -1,0 +1,9 @@
+//Query to print tables whose name is starting from some letter
+
+SELECT  TABLE_NAME
+FROM    INFORMATION_SCHEMA.TABLES
+WHERE   TABLE_NAME LIKE 'T%'
+
+OR
+
+SHOW TABLES LIKE 'T%'
