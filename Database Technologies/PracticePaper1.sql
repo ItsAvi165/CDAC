@@ -53,3 +53,10 @@ VALUES
     INNER JOIN Students s1 ON m1.Student_No = s1.Student_No 
     WHERE CONCAT(s1.Forename, ' ', s1.Surname) = 'John Doe' 
     AND m1.Module_Name = 'Science');
+
+-- 3. CREATE A FOREIGN KEY CONSTRAINT ON THE ‘STUDENT_NO’ COLUMN OF THE MARKS TABLE 
+-- ASSUMING ‘STUDENT_NO’ IS THE PRIMARY KEY OF THE STUDENT TABLE.
+
+    ALTER TABLE marks ADD FOREIGN KEY (Student_No) REFERENCES students(Student_No);
+                                        --OR
+    ALTER TABLE marks ADD CONSTRAINT fkmarks FOREIGN KEY (Student_No) REFERENCES students(Student_No);
