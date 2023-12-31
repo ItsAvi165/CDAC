@@ -60,3 +60,35 @@ VALUES
     ALTER TABLE marks ADD FOREIGN KEY (Student_No) REFERENCES students(Student_No);
                                         --OR
     ALTER TABLE marks ADD CONSTRAINT fkmarks FOREIGN KEY (Student_No) REFERENCES students(Student_No);
+
+-- 4. 
+-- WRITE A FUNCTION TO TAKE THE INPUT AS MARK AND RETURN THE GRADE. 
+-- GRADE IS A IF MARK IS 80 AND ABOVE 
+-- ELSE GRADE IS B IF MARK IS IN RANGE 65 TO 80 
+-- ELSE GRADE IS C IF MARK IS IN RANGE 50 TO 64 
+-- OTHERWISE, FAIL IF MARK < 50. 
+
+ DELIMITER &&
+ 
+ CREATE FUNCTION MarkToGrade(mark INT)
+ RETURNS VARCHAR(4)
+ DETERMINISTIC
+
+ BEGIN
+  DECLARE grade VARCHAR(4);
+  IF Mark >= 80 THEN
+    SET grade = 'A';
+  ELSEIF Mark >= 65 AND Mark < 80 THEN
+    SET grade ='B';
+  ELSEIF Mark >= 50 AND Mark < 65 THEN
+    SET grade ='C';
+  ELSE 
+    SET grade ='FAIL';
+  END IF;
+  RETURN grade; 
+ END;
+ &&
+
+ DELIMITER ;
+
+-- 5. WRITE A STORED PROCEDURE TO DISPLAY ALL THE TABLES WHOSE NAME STARTS WITH M. 
