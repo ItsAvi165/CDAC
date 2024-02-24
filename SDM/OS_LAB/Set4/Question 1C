@@ -1,0 +1,19 @@
+# Create directory 'one' and two files inside it
+mkdir one
+touch one/file1.txt
+touch one/file2.txt
+
+# Create directory 'two' inside 'one' and two files inside it
+mkdir one/two
+touch one/two/file3.txt
+touch one/two/file4.txt
+
+# Create directory 'three' inside 'two' and two files inside it
+mkdir one/two/three
+touch one/two/three/file5.txt
+touch one/two/three/file6.txt
+
+# Go to directory 'one' and remove everything under it
+cd one
+rm -r *
+

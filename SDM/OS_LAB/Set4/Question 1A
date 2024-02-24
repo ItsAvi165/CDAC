@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Accept sales and cost values from the user
+read -p "Enter the sales amount: " sales
+read -p "Enter the cost amount: " cost
+
+# Calculate the profit
+profit=$((sales - cost))
+
+# Subtract 10% from the profit as taxes
+taxes=$((profit * 10 / 100))
+net_profit=$((profit - taxes))
+
+# Display the net profit
+echo "The net profit is: $net_profit"
+

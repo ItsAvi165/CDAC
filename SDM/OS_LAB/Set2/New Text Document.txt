@@ -1,0 +1,43 @@
+
+
+Instructions
+There are two questions in the question paper. You need to solve both.
+Question 1 carries 10 marks. Question 2 carries 20 marks.
+For both the questions, submit code (.java file, Dockerfile, YAML file as appropriate) and/or screenshot of the each step of the output, as appropriate.
+***
+Q.1 
+(1) Use Linux Shell Script for this. Accept three numbers from the user and print the largest.
+=> Total 2 marks. 0.5 marks for each step.
+
+(2) Create a file ‘cdac.txt’ and write 5 lines in it as follows:
+Java is great
+Scripting is easy
+I love Java
+Python is good, too
+Hello, Java World!
+Now count the number of lines that do not contain the word Java using a command.
+=> File creation: 0.5 marks, Count: 1.5 marks
+(3) Create a directory called one. Create any 2 files in it. Inside one, create another directory called two. Copy the 2 files from directory one to directory two.
+=> 3 marks
+(4) Find files with the name abc.txt in the current directory or all its subdirectories. (Note: Create such a file before running this command).
+=> 3 marks
+
+Q.2 
+(a) Create a program to initialize a number to some integer value and find its factorial in Java. Execute it. 
+=> 3 marks
+Create a git project to move it to github. 
+=> 3 marks
+Create a Docker container of the code and execute it. Your screenshots should include all the steps related to your Docker work and also attach your Dockerfile.
+Dockerfile: 5 marks, Docker execution: 4 marks
+
+(b) 
+1. Create a new Test project with require dependencies (Select Simple Maven Project)
+2. Write Selenium script to automate the “Yelp Search Scenario”
+a. Navigate to https://www.yelp.com/
+b. Enter Restaurant in search box
+c. Click on search button
+d. Verify the title of result page
+3. Create a new Maven project in Jenkins -> Set Root POM as above project’s POM.xml
+4. Execute the Jenkins job with Goal: clean Test
+       Post your Jenkins console output and test.java file as final result.
+5 marks

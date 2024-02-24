@@ -1,0 +1,14 @@
+# Create directory 'one'
+mkdir one
+
+# Create two files in directory 'one'
+touch one/file1.txt
+touch one/file2.txt
+
+# Create directory 'two' inside 'one'
+mkdir one/two
+
+# Copy the files from directory 'one' to directory 'two'
+cp one/file1.txt one/two/
+cp one/file2.txt one/two/
+
