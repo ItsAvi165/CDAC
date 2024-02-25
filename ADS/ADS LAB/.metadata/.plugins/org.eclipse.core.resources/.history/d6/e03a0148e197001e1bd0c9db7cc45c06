@@ -1,0 +1,29 @@
+package core;
+
+public class Queue implements ICircularQueue {
+	
+	public Queue() {
+		int setQSize = 10;
+		 String[] Q = new String[setQSize];
+		
+	}
+	
+	@Override
+	public boolean add(String element) {
+		
+		return false;
+	}
+
+	@Override
+	public String remove() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

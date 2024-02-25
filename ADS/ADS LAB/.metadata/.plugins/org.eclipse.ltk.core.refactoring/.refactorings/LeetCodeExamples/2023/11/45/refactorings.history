@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;newDigit&apos; in &apos;test.Digits.plusOne(...)&apos; to &apos;quoteint&apos;&#x0D;&#x0A;- Original project: &apos;LeetCodeExamples&apos;&#x0D;&#x0A;- Original element: &apos;test.Digits.plusOne(int[]).newDigit&apos;&#x0D;&#x0A;- Renamed element: &apos;newDigit&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;newDigit&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;test{Digits.java[Digits~plusOne~\[I@newDigit!120!136!124!131!I!0!false" name="quoteint" references="true" stamp="1699548272760" version="1.0"/>
+</session>

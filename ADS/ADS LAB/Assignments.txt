@@ -1,0 +1,5 @@
+5- singly linked list
+6 - doubly linked list
+7 - circular linked list
+8 - recursion
+9 - binary search tree

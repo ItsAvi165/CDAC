@@ -1,0 +1,21 @@
+package stack_sample_ex1.tester;
+
+import java.util.Scanner;
+
+import stack_sample_ex1.core.StackOperation;
+
+public class StackTester {
+	public static void main(String[] args) {
+
+		try (Scanner sc = new Scanner(System.in)) {
+			StackOperation stack = new StackOperation();
+			boolean exit = true;
+			try {
+				
+
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
+		}
+	}
+}

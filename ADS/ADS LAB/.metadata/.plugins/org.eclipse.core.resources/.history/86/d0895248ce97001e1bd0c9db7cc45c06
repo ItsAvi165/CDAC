@@ -1,0 +1,10 @@
+package stack_sample_ex1.tester;
+
+import java.util.Scanner;
+
+public class StackTester {
+
+	try (Scanner sc = new Scanner(System.in)){
+		
+	}
+}

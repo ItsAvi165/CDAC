@@ -1,0 +1,28 @@
+package tester;
+
+public class QueueTest {
+
+	public static void main(String[] args) {
+		
+		try (){
+			boolean exit = false;
+			while(!exit) {
+				try {
+					switch (sc.nextInt()) {
+					case value:
+						
+						break;
+
+					default:
+						break;
+					}
+				}
+				catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+			}
+		}
+
+
+}
+}

@@ -1,0 +1,38 @@
+package tester;
+
+import java.util.Scanner;
+
+public class QueueTest {
+
+	public static void main(String[] args) {
+		
+		try (Scanner sc = new Scanner(System.in)){
+			boolean exit = false;
+			System.out.println("Enter queue size: ");
+			
+			while(!exit) {
+				System.out.println("Queue Operations\n"
+						+ "1. Enqueue\n"
+						+ "2. Dequeue\n"
+						+ "3.");
+				try {
+					switch (sc.nextInt()) {
+					case 1:
+						break;
+					case 2:
+						break;
+						
+
+					default:System.out.println("Invalid option");
+						break;
+					}
+				}
+				catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+			}
+		}
+
+
+}
+}
