@@ -1,0 +1,18 @@
+//To clone the repository onto the local system
+git clone https://github/com/ItsAvi165/OS_SDM-LabExam.git
+
+
+//Go to the cloned repo directory
+cd OS_SDM-LabExam
+
+
+//To add all the files in the staging area
+git add .
+
+
+//commit the changes to local repo with commit message
+git commit -m "Pushed Factorial code to the github repo"
+
+
+//To push the code to the github
+git push

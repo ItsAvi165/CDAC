@@ -1,0 +1,4 @@
+#command to find file with name "abc.txt" in current directory or all its subdirectories
+
+find . -name "abc.txt"
+
