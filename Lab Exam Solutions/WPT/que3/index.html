@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Button and Div Animation</title>
+    <style>
+      #button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #337ab7;
+        color: white;
+        cursor: pointer;
+      }
+      #block {
+        display: none;
+        position: absolute;
+        background-color: #f0f0f0;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="button">Show Div Block</button>
+    <div id="block">This is a div block</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#button").click(function () {
+          const buttonOffset = $(this).offset();
+          const buttonWidth = $(this).outerWidth();
+          $("#block").css({
+            display: "block",
+            top: buttonOffset.top,
+            left: buttonOffset.left + buttonWidth,
+          });
+        });
+
+        $("#block").mouseover(function () {
+          $(this).css({
+            top: $("#button").offset().top + $("#button").outerHeight(),
+            left: $("#button").offset().left,
+          });
+        });
+
+        $("#block").mouseleave(function () {
+          $(this).hide();
+        });
+      });
+    </script>
+  </body>
+</html>
